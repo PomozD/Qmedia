@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Qmedia</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slider.css">
+</head>
+
+<body>
+
+  <main class="main-container">
+    <h1>Онлайн-подбор средств для лица</h1>
+    <h2>Пройдите короткий тест и получите список наиболее <br> подходящих для вас косметических продуктов</h2>
+
+    <div class="slider-container">
+      <div class="slider">
+        <section class="slide">
+          <div class="current-slides-container">
+            <div class="current-slide slide-checked"></div>
+            <div class="current-slide"></div>
+            <div class="current-slide"></div>
+          </div>
+
+          <p class="question-number">Вопрос 1 из 3</p>
+          <div class="div-question">
+            <p class="question">Сколько вам лет?</p>
+          </div>
+
+          <div class="answers-container">
+            <label for="сheckbox1_1">
+              <input id="сheckbox1_1" name="сheckbox1" type="checkbox" />
+            Нужны средства для ребёнка младше 10 лет
+            </label>
+            <label for="сheckbox1_2">
+              <input id="сheckbox1_2" name="сheckbox2" type="checkbox" />
+            Мне меньше 25 лет
+            </label>
+            <label for="сheckbox1_3"><input id="сheckbox1_3" name="сheckbox3" type="checkbox" />
+            От 25 до 35 лет
+            </label>
+            <label for="сheckbox1_4">
+              <input id="сheckbox1_4" name="сheckbox4" type="checkbox" />
+            От 35 до 45 лет
+            </label>
+            <label for="сheckbox1_5">
+              <input id="сheckbox1_5" name="сheckbox5" type="checkbox" />
+            Мне больше 45 лет
+            </label>
+          </div>
+          <input class="btn btn-forward forward" type="button" value="Дальше">
+        </section>
+
+        <section class="slide">
+          <div class="current-slides-container">
+            <div class="current-slide"></div>
+            <div class="current-slide slide-checked"></div>
+            <div class="current-slide"></div>
+          </div>
+
+          <p class="question-number">Вопрос 2 из 3</p>
+          <div class="div-question">
+            <p class="question">Какой у вас тип кожи?</p>
+          </div>
+
+          <div class="answers-container">
+            <label for="сheckbox2_1">
+              <input id="сheckbox2_1" name="сheckbox1" type="checkbox" />
+              Сухая
+            </label>
+            <label for="сheckbox2_2">
+              <input id="сheckbox2_2" name="сheckbox2" type="checkbox" />
+              Нормальная
+            </label>
+            <label for="сheckbox2_3">
+              <input id="сheckbox2_3" name="сheckbox3" type="checkbox" />
+              Комбинированная
+            </label>
+            <label for="сheckbox2_4">
+              <input id="сheckbox2_4" name="сheckbox4" type="checkbox" />
+              Жирная
+            </label>
+          </div>
+          <input class="btn btn-back back" type="button" value="Назад">
+          <input class="btn btn-forward forward" type="button" value="Дальше">
+        </section>
+
+        <section class="slide">
+          <div class="current-slides-container">
+            <div class="current-slide"></div>
+            <div class="current-slide"></div>
+            <div class="current-slide slide-checked"></div>
+          </div>
+
+          <p class="question-number">Вопрос 3 из 3</p>
+          <div class="div-question">
+            <p class="question">Беспокоят ли воспаления на лице?</p>
+          </div>
+
+          <div class="answers-container">
+            <label for="сheckbox3_1">
+              <input id="сheckbox3_1" name="сheckbox1" type="checkbox" />
+              Да
+            </label>
+            <label for="сheckbox3_2">
+              <input id="сheckbox3_2" name="сheckbox2" type="checkbox" />
+              Нет
+            </label>
+            <label for="сheckbox3_3">
+              <input id="сheckbox3_3" name="сheckbox3" type="checkbox" />
+              Никогда
+            </label>
+
+          </div>
+          <input class="btn btn-back back" type="button" value="Назад">
+          <a href="results.html" class="btn btn-forward results" type="button">Узнать результат</a>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  
+  <script src="js/slider.js"></script>
+</body>
+
+</html>

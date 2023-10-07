@@ -1,0 +1,154 @@
+.slider-container {
+    position: relative;
+    width: 468px;
+    height: 432px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    width: 2604px;
+    position: absolute;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    background-color: #DDF3FF;
+    padding: 30px;
+}
+
+.current-slides-container {
+    display: flex;
+    gap: 10px;
+}
+
+.current-slide {
+    width: 20px;
+    height: 20px;
+    background-color: #89D1F8;
+    border-radius: 20px;
+}
+
+.slide-checked {
+    background-color: #00A5FF;
+}
+
+.question-number {
+    font-weight: 400;
+    font-size: 15px;
+    color: #9A9A9A;
+}
+
+.div-question {
+    width: 600px;
+}
+
+.question {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+label {
+    font-weight: 400;
+    font-size: 15px;
+    vertical-align: top;
+    margin-top: -5px;
+    padding: 10px 0;
+}
+
+input[type="checkbox"] {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #b2b2b2;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #b2b2b2;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .slider-container {
+        width: 668px;
+        height: 412px;
+    }
+
+    .slide {
+        padding: 25px;
+    }
+
+    .current-slide {
+        width: 18px;
+        height: 18px;
+    }
+
+    .question-number {
+        font-size: 14px;
+    }
+
+    .question {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider-container {
+        width: 100%;
+        height: 475px;
+    }
+
+    .slider {
+        width: 2604px;
+    }
+
+    .slide {
+        word-break: break-all;
+        padding: 20px;
+    }
+
+    .current-slide {
+        width: 22px;
+        height: 22px;
+    }
+
+    .question-number {
+        font-size: 16px;
+    }
+
+    .div-question {
+        width: 300px;
+    }
+
+    .question {
+        font-size: 22px;
+    }
+
+    .answers-container {
+        height: 220px;
+        width: 34%;
+    }
+
+    label {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    input[type="checkbox"] {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
